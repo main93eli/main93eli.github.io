@@ -190,7 +190,7 @@ function startCarousel() {
     imageCount++;
     imgElement.src = "img/".concat(imageCount, ".jpg");
 
-    if (imageCount > numberOfImages) {
+    if (imageCount >= numberOfImages) {
       imageCount = 1;
     }
 
@@ -241,7 +241,7 @@ function getParameterByName(name, url) {
 }
 
 function updateImage() {
-  albumImage.src = "img/".concat(currentCount.toString(), ".jpg");
+  albumImage.src = "album/img/".concat(currentCount.toString(), ".jpg");
   counter.innerHTML = "".concat(currentCount, "/").concat(IMAGE_COUNT);
 }
 
