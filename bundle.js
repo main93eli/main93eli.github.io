@@ -241,7 +241,7 @@ function getParameterByName(name, url) {
 }
 
 function updateImage() {
-  albumImage.src = "album/img/".concat(currentCount.toString(), ".jpg");
+  albumImage.src = "img/".concat(currentCount.toString(), ".jpg");
   counter.innerHTML = "".concat(currentCount, "/").concat(IMAGE_COUNT);
 }
 
