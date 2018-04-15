@@ -163,18 +163,19 @@ var _util = __webpack_require__(0);
 
 var mainCarousel = document.querySelector('.carousel');
 var imgElement = document.querySelector('.carousel-image');
-var numberOfImages = 9;
+var numberOfImages = 10;
 var imageCount = 1;
 var carouselAlbumMapping = {
-  1: 20,
-  2: 38,
-  3: 39,
-  4: 40,
-  5: 41,
-  6: 1,
-  7: 43,
-  8: 38,
-  9: 6
+  1: 1,
+  2: 22,
+  3: 21,
+  4: 42,
+  5: 43,
+  6: 44,
+  7: 45,
+  8: 41,
+  9: 8,
+  10: 46
 };
 
 function startCarousel() {
@@ -218,7 +219,7 @@ var _path = _interopRequireDefault(__webpack_require__(6));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var IMAGE_COUNT = 51;
+var IMAGE_COUNT = 54;
 var albumContainer = document.querySelector('.album-image-container');
 var albumImage = document.querySelector('.album-image');
 var imageCaption = document.querySelector('.image-caption');
@@ -282,6 +283,7 @@ function initAlbum() {
   }
 
   currentCount = parseInt(getParameterByName('start'));
+  console.log(currentCount);
   updateImage();
   updateCaption();
   leftNav.addEventListener('click', goToPrevImage);
@@ -726,53 +728,54 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.imageCaptions = void 0;
-var imageCaptions = {
+
+var _imageCaptions;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var imageCaptions = (_imageCaptions = {
   1: 'Eleni in Helmut Lang',
   2: 'Eleni in Helmut Lang',
   3: 'Eleni in Helmut Lang',
-  4: 'Russh',
-  5: 'Russh',
+  4: 'Eleni in Helmut Lang',
+  5: 'Eleni in Helmut Lang',
   6: 'Russh',
   7: 'Russh',
-  8: 'Tara',
-  10: 'Office',
-  11: 'Office',
+  8: 'Russh',
+  9: 'Russh',
+  10: 'Tara',
   12: 'Office',
   13: 'Office',
   14: 'Office',
-  15: 'Laura',
-  16: 'Kaisa',
-  17: 'The feeling I get when I am with you',
-  18: 'The feeling I get when I am with you',
-  19: 'The feeling I get when I am with you',
-  20: 'The feeling I get when I am with you',
-  21: 'The feeling I get when I am with you',
-  22: 'The feeling I get when I am with you',
-  23: 'Tandi',
-  25: 'Ellery',
-  26: 'Les Echos',
-  27: 'Les Echos',
-  28: 'Anine',
-  29: 'Anine',
-  30: 'Jalouse',
-  31: 'Jalouse',
-  32: 'Jalouse',
-  33: 'Lera',
-  34: 'Russh',
-  35: 'Russh',
-  36: 'Russh',
+  15: 'Office',
+  16: 'Office',
+  17: 'Lara',
+  18: 'Kaisa',
+  19: 'The feeling I get when I\'m with you',
+  20: 'The feeling I get when I\'m with you',
+  21: 'The feeling I get when I\'m with you',
+  22: 'The feeling I get when I\'m with you',
+  23: 'The feeling I get when I\'m with you',
+  24: 'The feeling I get when I\'m with you',
+  25: 'Tandy',
+  27: 'Ellery',
+  28: 'Lotte',
+  29: 'Lotte',
+  30: 'Lotte',
+  31: 'Anine',
+  32: 'Anine',
+  33: 'Jalouse',
+  34: 'Jalouse',
+  35: 'Jalouse',
+  36: 'Lera',
   37: 'Russh',
-  38: 'The feeling I get when I am with you',
-  39: 'Near East',
-  41: 'Jalouse',
-  42: 'LKBENNETTXPREEN',
-  43: 'Iana',
-  44: 'Yelena',
-  46: 'The feeling I get when I am with you',
-  47: 'Tara',
-  48: 'Tank',
-  51: 'Glamour'
-};
+  38: 'Russh',
+  39: 'Russh',
+  40: 'Russh',
+  41: 'The feeling I get when I\'m with you',
+  42: 'Near East',
+  44: 'Jalouse'
+}, _defineProperty(_imageCaptions, "44", 'Iana'), _defineProperty(_imageCaptions, 46, 'Yelena'), _defineProperty(_imageCaptions, 48, 'The feeling I get when I\'m with you'), _defineProperty(_imageCaptions, 49, 'Tara'), _defineProperty(_imageCaptions, 50, 'Tank'), _defineProperty(_imageCaptions, 53, 'Glamour'), _defineProperty(_imageCaptions, 54, 'Glamour'), _imageCaptions);
 exports.imageCaptions = imageCaptions;
 
 /***/ })
