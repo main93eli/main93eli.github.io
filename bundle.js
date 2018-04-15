@@ -222,6 +222,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var IMAGE_COUNT = 54;
 var albumContainer = document.querySelector('.album-image-container');
 var albumImage = document.querySelector('.album-image');
+var preloadImage = document.querySelector('.preload');
 var imageCaption = document.querySelector('.image-caption');
 var counter = document.querySelector('.counter');
 var leftNav = document.querySelector('.back-arrow');
@@ -243,6 +244,7 @@ function getParameterByName(name, url) {
 
 function updateImage() {
   albumImage.src = "img/".concat(currentCount.toString(), ".jpg");
+  preloadImage.src = "img/".concat((currentCount + 1).toString(), ".jpg");
   counter.innerHTML = "".concat(currentCount, "/").concat(IMAGE_COUNT);
 }
 

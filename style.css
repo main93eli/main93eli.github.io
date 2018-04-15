@@ -205,6 +205,9 @@ header {
   .back:hover, .back:active {
     color: black; }
 
+.preload {
+  display: none; }
+
 body {
   min-height: 100vh;
   min-width: 100vw;
