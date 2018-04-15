@@ -163,6 +163,7 @@ var _util = __webpack_require__(0);
 
 var mainCarousel = document.querySelector('.carousel');
 var imgElement = document.querySelector('.carousel-image');
+var preloadImage = document.querySelector('.preload');
 var numberOfImages = 10;
 var imageCount = 1;
 var carouselAlbumMapping = {
@@ -190,6 +191,7 @@ function startCarousel() {
   setTimeout(function () {
     imageCount++;
     imgElement.src = "img/".concat(imageCount, ".jpg");
+    preloadImage.src = "img/".concat((imageCount + 1).toString(), ".jpg");
 
     if (imageCount >= numberOfImages) {
       imageCount = 1;
