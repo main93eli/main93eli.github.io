@@ -761,7 +761,7 @@ var imageCaptions = (_imageCaptions = {
   22: 'The feeling I get when I\'m with you',
   23: 'The feeling I get when I\'m with you',
   24: 'The feeling I get when I\'m with you',
-  25: 'Tadi',
+  25: 'Tandi',
   27: 'Ellery',
   28: 'Lotte',
   29: 'Lotte',
