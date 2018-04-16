@@ -761,7 +761,7 @@ var imageCaptions = (_imageCaptions = {
   22: 'The feeling I get when I\'m with you',
   23: 'The feeling I get when I\'m with you',
   24: 'The feeling I get when I\'m with you',
-  25: 'Tandy',
+  25: 'Tadi',
   27: 'Ellery',
   28: 'Lotte',
   29: 'Lotte',
@@ -779,7 +779,7 @@ var imageCaptions = (_imageCaptions = {
   41: 'The feeling I get when I\'m with you',
   42: 'Near East',
   44: 'Jalouse'
-}, _defineProperty(_imageCaptions, "44", 'Iana'), _defineProperty(_imageCaptions, 46, 'Yelena'), _defineProperty(_imageCaptions, 48, 'The feeling I get when I\'m with you'), _defineProperty(_imageCaptions, 49, 'Tara'), _defineProperty(_imageCaptions, 50, 'Tank'), _defineProperty(_imageCaptions, 53, 'Glamour'), _defineProperty(_imageCaptions, 54, 'Glamour'), _imageCaptions);
+}, _defineProperty(_imageCaptions, "45", 'Iana'), _defineProperty(_imageCaptions, 46, 'Yelena'), _defineProperty(_imageCaptions, 48, 'The feeling I get when I\'m with you'), _defineProperty(_imageCaptions, 49, 'Tara'), _defineProperty(_imageCaptions, 50, 'Tank'), _defineProperty(_imageCaptions, 53, 'Glamour'), _defineProperty(_imageCaptions, 54, 'Glamour'), _imageCaptions);
 exports.imageCaptions = imageCaptions;
 
 /***/ })
