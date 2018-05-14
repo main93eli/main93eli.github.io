@@ -84,7 +84,7 @@ function hasClass(ele, cls) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-module.exports = __webpack_require__(8);
+module.exports = __webpack_require__(9);
 
 
 /***/ }),
@@ -168,15 +168,15 @@ var numberOfImages = 10;
 var imageCount = 1;
 var carouselAlbumMapping = {
   1: 1,
-  2: 22,
-  3: 21,
-  4: 42,
-  5: 43,
-  6: 44,
-  7: 45,
-  8: 41,
+  2: 21,
+  3: 20,
+  4: 47,
+  5: 49,
+  6: 50,
+  7: 52,
+  8: 46,
   9: 8,
-  10: 46
+  10: 53
 };
 
 function startCarousel() {
@@ -190,11 +190,15 @@ function startCarousel() {
   });
   setTimeout(function () {
     imageCount++;
-    imgElement.src = "img/".concat(imageCount, ".jpg");
-    preloadImage.src = "img/".concat((imageCount + 1).toString(), ".jpg");
 
-    if (imageCount >= numberOfImages) {
+    if (imageCount > numberOfImages) {
       imageCount = 1;
+    }
+
+    imgElement.src = "img/".concat(imageCount, ".jpg");
+
+    if (imageCount !== numberOfImages) {
+      preloadImage.src = "img/".concat((imageCount + 1).toString(), ".jpg");
     }
 
     startCarousel();
@@ -213,15 +217,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.initAlbum = initAlbum;
 
-var _captions = __webpack_require__(9);
+var _captions = __webpack_require__(6);
 
 var _util = __webpack_require__(0);
 
-var _path = _interopRequireDefault(__webpack_require__(6));
+var _path = _interopRequireDefault(__webpack_require__(7));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var IMAGE_COUNT = 54;
+var IMAGE_COUNT = 65;
 var albumContainer = document.querySelector('.album-image-container');
 var albumImage = document.querySelector('.album-image');
 var preloadImage = document.querySelector('.preload');
@@ -246,7 +250,11 @@ function getParameterByName(name, url) {
 
 function updateImage() {
   albumImage.src = "img/".concat(currentCount.toString(), ".jpg");
-  preloadImage.src = "img/".concat((currentCount + 1).toString(), ".jpg");
+
+  if (currentCount !== IMAGE_COUNT) {
+    preloadImage.src = "img/".concat((currentCount + 1).toString(), ".jpg");
+  }
+
   counter.innerHTML = "".concat(currentCount, "/").concat(IMAGE_COUNT);
 }
 
@@ -287,7 +295,6 @@ function initAlbum() {
   }
 
   currentCount = parseInt(getParameterByName('start'));
-  console.log(currentCount);
   updateImage();
   updateCaption();
   leftNav.addEventListener('click', goToPrevImage);
@@ -296,6 +303,80 @@ function initAlbum() {
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.imageCaptions = void 0;
+var imageCaptions = {
+  1: 'Eleni in Helmut Lang',
+  2: 'Eleni in Helmut Lang',
+  3: 'Eleni in Helmut Lang',
+  4: 'Eleni in Helmut Lang',
+  5: 'Eleni in Helmut Lang',
+  6: 'Russh',
+  7: 'Russh',
+  8: 'Russh',
+  9: 'Russh',
+  10: 'Tara',
+  12: 'Office',
+  13: 'Office',
+  14: 'Office',
+  15: 'Office',
+  16: 'Office',
+  17: 'Lara',
+  18: 'Kaisa',
+  19: 'The feeling I get when I\'m with you',
+  20: 'The feeling I get when I\'m with you',
+  21: 'The feeling I get when I\'m with you',
+  22: 'The feeling I get when I\'m with you',
+  23: 'The feeling I get when I\'m with you',
+  24: 'Tandy',
+  26: 'Ellery SS',
+  27: 'Ellery SS',
+  28: 'Lotte',
+  29: 'Lotte',
+  30: 'Lotte',
+  31: 'Anine',
+  32: 'Anine',
+  33: 'Marie Claire',
+  34: 'Marie Claire',
+  35: 'Marie Claire',
+  36: 'Jalouse',
+  37: 'Jalouse',
+  38: 'Jalouse',
+  39: 'Jalouse',
+  40: 'Lera',
+  41: 'Maren',
+  42: 'Russh',
+  43: 'Russh',
+  44: 'Russh',
+  45: 'Russh',
+  47: 'Near East',
+  48: 'Near East',
+  50: 'Jalouse',
+  51: 'Preen AW',
+  52: 'Preen AW',
+  53: 'Iana',
+  54: 'Yelena',
+  55: 'Tara',
+  56: 'Tank',
+  57: 'Tank',
+  60: 'Zoo X Louis Vuitton',
+  61: 'Zoo X Louis Vuitton',
+  62: 'Jalouse',
+  63: 'Crash',
+  64: 'Crash',
+  65: 'Crash'
+};
+exports.imageCaptions = imageCaptions;
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -523,10 +604,10 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -716,71 +797,10 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.imageCaptions = void 0;
-
-var _imageCaptions;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var imageCaptions = (_imageCaptions = {
-  1: 'Eleni in Helmut Lang',
-  2: 'Eleni in Helmut Lang',
-  3: 'Eleni in Helmut Lang',
-  4: 'Eleni in Helmut Lang',
-  5: 'Eleni in Helmut Lang',
-  6: 'Russh',
-  7: 'Russh',
-  8: 'Russh',
-  9: 'Russh',
-  10: 'Tara',
-  12: 'Office',
-  13: 'Office',
-  14: 'Office',
-  15: 'Office',
-  16: 'Office',
-  17: 'Lara',
-  18: 'Kaisa',
-  19: 'The feeling I get when I\'m with you',
-  20: 'The feeling I get when I\'m with you',
-  21: 'The feeling I get when I\'m with you',
-  22: 'The feeling I get when I\'m with you',
-  23: 'The feeling I get when I\'m with you',
-  24: 'The feeling I get when I\'m with you',
-  25: 'Tandy',
-  27: 'Ellery',
-  28: 'Lotte',
-  29: 'Lotte',
-  30: 'Lotte',
-  31: 'Anine',
-  32: 'Anine',
-  33: 'Jalouse',
-  34: 'Jalouse',
-  35: 'Jalouse',
-  36: 'Lera',
-  37: 'Russh',
-  38: 'Russh',
-  39: 'Russh',
-  40: 'Russh',
-  41: 'The feeling I get when I\'m with you',
-  42: 'Near East',
-  44: 'Jalouse'
-}, _defineProperty(_imageCaptions, "44", 'Iana'), _defineProperty(_imageCaptions, 46, 'Yelena'), _defineProperty(_imageCaptions, 48, 'The feeling I get when I\'m with you'), _defineProperty(_imageCaptions, 49, 'Tara'), _defineProperty(_imageCaptions, 50, 'Tank'), _defineProperty(_imageCaptions, 53, 'Glamour'), _defineProperty(_imageCaptions, 54, 'Glamour'), _imageCaptions);
-exports.imageCaptions = imageCaptions;
 
 /***/ })
 /******/ ]);

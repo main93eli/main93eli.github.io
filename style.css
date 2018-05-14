@@ -175,20 +175,6 @@ header {
 .counter {
   text-align: right; }
 
-.navigate-left,
-.navigate-right {
-  position: absolute;
-  width: 50%;
-  opacity: 0.2;
-  height: 100%;
-  z-index: 10; }
-
-.navigate-right {
-  right: 0; }
-
-.navigate-left {
-  left: 0; }
-
 .footer {
   font-size: 0.7em;
   justify-content: space-between;
