@@ -317,7 +317,6 @@ var imageCaptions = {
   2: 'Anine',
   3: 'Russh',
   4: 'Near East, styled by Lotta Volkova',
-  5: 'Eleni',
   6: 'Céline',
   8: 'Russh',
   9: 'Jalouse, Cover story',
@@ -356,11 +355,12 @@ var imageCaptions = {
   46: 'Anine',
   47: 'Crash, Cover story',
   48: 'The feeling I get when I\'m with you',
+  49: 'Russh',
   52: 'Helmut Lang',
   53: 'L\'officiel Paris',
   55: 'Anine',
   56: 'Russh',
-  57: 'Rebecca in Versailles',
+  57: 'Rebecca, Versailles',
   58: 'Eleni',
   61: 'Vanja'
 };
