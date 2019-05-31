@@ -167,16 +167,15 @@ var preloadImage = document.querySelector('.preload');
 var numberOfImages = 10;
 var imageCount = 1;
 var carouselAlbumMapping = {
-  1: 2,
-  2: 3,
-  3: 20,
-  4: 17,
-  5: 42,
-  6: 43,
-  7: 44,
-  8: 29,
-  9: 35,
-  10: 4
+  1: 1,
+  2: 32,
+  3: 3,
+  4: 2,
+  5: 11,
+  6: 42,
+  7: 47,
+  8: 17,
+  9: 34
 };
 
 function startCarousel() {
@@ -225,7 +224,7 @@ var _path = _interopRequireDefault(__webpack_require__(7));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var IMAGE_COUNT = 61;
+var IMAGE_COUNT = 50;
 var albumContainer = document.querySelector('.album-image-container');
 var albumImage = document.querySelector('.album-image');
 var preloadImage = document.querySelector('.preload');
@@ -259,7 +258,7 @@ function updateImage() {
 }
 
 function updateCaption() {
-  var newCaption = _captions.imageCaptions[currentCount] || '';
+  var newCaption = _captions.imageCaptions[currentCount.toString()] || '';
   imageCaption.innerHTML = newCaption;
 }
 
@@ -313,56 +312,41 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.imageCaptions = void 0;
 var imageCaptions = {
-  1: 'Jalouse, Cover story',
-  2: 'Anine',
-  3: 'Russh',
-  4: 'Near East, styled by Lotta Volkova',
-  6: 'Céline',
-  8: 'Russh',
-  9: 'Jalouse, Cover story',
-  10: 'Near East, styled by Lotta Volkova',
-  11: 'Louis Vuitton x Zoo',
-  12: 'Helmut Lang',
-  13: 'Iana',
-  14: 'Ellery',
-  15: 'Crash, Cover story',
-  16: 'Office',
-  17: 'Iana',
-  18: 'Louis Vuitton x Zoo',
-  19: 'Vanja',
-  20: 'Helmut Lang',
-  21: 'Office',
-  23: 'Helmut Lang',
-  24: 'L\'officiel Paris',
-  25: 'The feeling I get when I\'m with you',
-  26: 'L\'officiel Paris',
-  27: 'Helmut Lang',
-  28: 'L\'officiel Paris',
-  29: 'Russh',
-  30: 'Marie Claire',
-  31: 'Tara',
-  32: 'Anine',
-  33: 'Lara',
-  34: 'Chanel',
-  35: 'Yelena',
-  36: 'The feeling I get when I\'m with you',
-  37: 'Lera',
-  38: 'Marie Claire',
-  39: 'Crash, Cover story',
-  40: 'Lera',
-  43: 'Kaisa',
-  45: 'Nike',
-  46: 'Anine',
-  47: 'Crash, Cover story',
-  48: 'The feeling I get when I\'m with you',
-  49: 'Russh',
-  52: 'Helmut Lang',
-  53: 'L\'officiel Paris',
-  55: 'Anine',
-  56: 'Russh',
-  57: 'Rebecca, Versailles',
-  58: 'Eleni',
-  61: 'Vanja'
+  '1': 'Devon Ross X Saint Laurent',
+  '2': 'Anine',
+  '3': 'Russh',
+  '5': 'Jalouse cover story',
+  '7': 'Miu Miu X Russh',
+  '8': 'Ellery',
+  '9': 'Iana',
+  '10': 'Vanja',
+  '11': 'Helmut Lang Archives',
+  '12': 'Office X Y Project',
+  '14': 'Lang Archives',
+  '15': 'Miu Miu',
+  '17': 'Russh',
+  '18': 'Devon Ross X Saint Laurent',
+  '19': 'Tara',
+  '20': 'Isabel Marant',
+  '21': 'Lang Archives',
+  '22': 'Tara',
+  '24': 'Chanel',
+  '25': 'Yelena',
+  '27': 'Lera',
+  '28': 'Lera',
+  '29': 'Crash cover story',
+  '30': 'Vanja X Balenciaga',
+  '33': 'Kaisa',
+  '35': 'Nike',
+  '36': 'Anine',
+  '40': 'Fendi',
+  '41': 'Lang Archives',
+  '42': 'Louis Vuitton',
+  '44': 'Anine',
+  '45': 'Mayka for Russh',
+  '46': 'Rebeka',
+  '47': 'Lang Archives',
+  '50': 'Loewe'
 };
 exports.imageCaptions = imageCaptions;
 
