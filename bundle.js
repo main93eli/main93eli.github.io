@@ -164,7 +164,7 @@ var _util = __webpack_require__(0);
 var mainCarousel = document.querySelector('.carousel');
 var imgElement = document.querySelector('.carousel-image');
 var preloadImage = document.querySelector('.preload');
-var numberOfImages = 10;
+var numberOfImages = 9;
 var imageCount = 1;
 var carouselAlbumMapping = {
   1: 1,
@@ -322,13 +322,13 @@ var imageCaptions = {
   '10': 'Vanja',
   '11': 'Helmut Lang Archives',
   '12': 'Office X Y Project',
-  '14': 'Lang Archives',
+  '14': 'Helmut Lang Archives',
   '15': 'Miu Miu',
   '17': 'Russh',
   '18': 'Devon Ross X Saint Laurent',
   '19': 'Tara',
   '20': 'Isabel Marant',
-  '21': 'Lang Archives',
+  '21': 'Helmut Lang Archives',
   '22': 'Tara',
   '24': 'Chanel',
   '25': 'Yelena',
@@ -340,12 +340,12 @@ var imageCaptions = {
   '35': 'Nike',
   '36': 'Anine',
   '40': 'Fendi',
-  '41': 'Lang Archives',
+  '41': 'Helmut Lang Archives',
   '42': 'Louis Vuitton',
   '44': 'Anine',
   '45': 'Mayka for Russh',
   '46': 'Rebeka',
-  '47': 'Lang Archives',
+  '47': 'Helmut Lang Archives',
   '50': 'Loewe'
 };
 exports.imageCaptions = imageCaptions;
